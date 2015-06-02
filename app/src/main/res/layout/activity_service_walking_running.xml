@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+              android:layout_gravity="center_horizontal"
+              tools:context="com.dogsontherun.pocketpupv2.ServiceWalkingRunning">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myPets_pic"
+        android:src="@mipmap/ic_launcher"
+        android:minHeight="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pet Name"
+        android:id="@+id/service_walking_petName"
+        android:layout_below="@+id/myPets_pic"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Breed"
+        android:id="@+id/service_walking_breed"
+        android:layout_below="@+id/service_walking_petName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service_walking_breed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/service_walking_container"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Length of Walk"
+            android:id="@+id/walk_length_txt"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/walk_radioGroup"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:measureWithLargestChild="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 min"
+                android:id="@+id/walk30"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45 min"
+                android:id="@+id/walk45"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 hour"
+                android:id="@+id/walk60"
+                android:checked="false"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service_walking_container"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/service_running_container"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Length of Run"
+            android:id="@+id/service_running_length"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/run_radioGroup"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:measureWithLargestChild="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 min"
+                android:id="@+id/run30"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45 min"
+                android:id="@+id/run45"
+                android:checked="false"/>
+        </RadioGroup>
+    </LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:text="Request Service"
+    android:id="@+id/service_request_btn"
+    android:background="#ffadc1ea"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:id="@+id/display_price"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/service_request_btn"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:background="#ffc0c9c4"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Pocket Pup V2</string>
+
+    <!--Action Bar String Variables-->
+    <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+    <string name="action_my_account">My Account</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_log_out">Log Out</string>
+    <string name="action_my_pets">My Pets</string>
+
+    <!--Activity Title String Variables-->
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_landing">Landing</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_add_emergency_contact">Add Emergency Contact</string>
+    <string name="title_activity_add_home_adress">Add Home Address</string>
+    <string name="title_activity_add_billing_info">Add Billing Info</string>
+    <string name="title_my_pets">My Pets</string>
+    <string name="title_activity_add_pet">Add Pet</string>
+    <string name="title_activity_my_account">My Account</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="test1">Sample and Testing Text - Alpha</string>
+    <string name="test2">Sample and Testing Text - Beta</string>
+    <string name="test3">Sample and Testing Sample Text Extra - Gamma</string>
+    <string name="title_activity_parse_list">Parse List Activity</string>
+    <string name="title_activity_request_service">Request Service</string>
+    <string name="title_activity_my_pets">My Pets</string>
+    <string name="title_activity_service_walking_running">Walking and Running Service</string>
+    <string name="title_activity_pet_selection">PetSelection</string>
+    <string name="title_activity_service_request_confirmation">Service Request Confirmation</string>
+
+</resources>
